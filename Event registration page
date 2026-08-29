@@ -1418,4 +1418,1227 @@ footer{
     }
 
     .hero{
-   
+
+        grid-template-columns:1fr;
+
+        padding-top:45px;
+    }
+
+    .heroArt{
+        height:450px;
+    }
+
+    .benefits{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .showcaseGrid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:650px){
+
+    .container,
+    .nav{
+        width:90%;
+    }
+
+    .navCTA{
+        padding:11px 15px;
+        font-size:11px;
+    }
+
+    .hero{
+        min-height:auto;
+
+        padding:
+            40px 0
+            80px;
+    }
+
+    .hero h1{
+        font-size:
+            clamp(62px,17vw,92px);
+
+        letter-spacing:-5px;
+    }
+
+    .heroText{
+        font-size:15px;
+    }
+
+    .heroArt{
+        height:370px;
+
+        border-radius:30px;
+    }
+
+    .artBig{
+        font-size:90px;
+    }
+
+    .intro{
+        padding:100px 0;
+    }
+
+    .bigText{
+        font-size:
+            clamp(42px,11vw,65px);
+
+        letter-spacing:-3px;
+    }
+
+    .sectionHead{
+        display:block;
+    }
+
+    .sectionHead h2{
+        font-size:55px;
+
+        margin-bottom:20px;
+    }
+
+    .benefits{
+        grid-template-columns:1fr;
+    }
+
+    .benefit{
+        min-height:300px;
+    }
+
+    .showcase{
+        padding:100px 0;
+    }
+
+    .project{
+        min-height:420px;
+
+        border-radius:30px;
+    }
+
+    .project.small{
+        min-height:250px;
+    }
+
+    .timelineItem{
+        grid-template-columns:
+            45px 1fr;
+
+        gap:15px;
+    }
+
+    .date{
+        grid-column:2;
+
+        text-align:left;
+    }
+
+    .form{
+        grid-template-columns:1fr;
+
+        margin-top:45px;
+    }
+
+    textarea.input,
+    .submit{
+        grid-column:auto;
+    }
+
+    .registerBox{
+        border-radius:30px;
+    }
+
+    .registerBox h2{
+        font-size:
+            clamp(50px,14vw,75px);
+
+        letter-spacing:-4px;
+    }
+
+    footer{
+        flex-direction:column;
+
+        gap:10px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- BACKGROUND -->
+<div class="background"></div>
+
+<!-- MOVING ORANGE GLASS DOTS -->
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+
+<!-- FLOATING WORDS -->
+<div class="floatWord fw1">BUILD</div>
+<div class="floatWord fw2">PITCH</div>
+<div class="floatWord fw3">CREATE</div>
+
+
+<!-- NAVIGATION -->
+
+<nav class="nav">
+
+    <div class="logo">
+
+        <div class="logoBox">
+            E
+        </div>
+
+        E-CELL
+
+    </div>
+
+
+    <div class="navLinks">
+
+        <a href="#about">ABOUT</a>
+
+        <a href="#benefits">BENEFITS</a>
+
+        <a href="#timeline">TIMELINE</a>
+
+        <a href="#faq">FAQ</a>
+
+    </div>
+
+
+    <button
+        class="navCTA"
+        onclick="goRegister()">
+
+        REGISTER ↗
+
+    </button>
+
+</nav>
+
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero container">
+
+    <div>
+
+        <div class="kicker">
+
+            <span class="kickerDot"></span>
+
+            E-CELL · STARTUP PITCH 2026
+
+        </div>
+
+
+        <h1>
+
+            Build the
+
+            <span class="orange">
+                next.
+            </span>
+
+            Pitch it.
+
+        </h1>
+
+
+        <p class="heroText">
+
+            One problem. One bold solution.
+            One opportunity to put your idea
+            in front of the people who can
+            help you take it further.
+
+        </p>
+
+
+        <div class="heroActions">
+
+            <button
+                class="btnWhite"
+                onclick="goRegister()">
+
+                Register your idea ↗
+
+            </button>
+
+
+            <button
+                class="btnOrange"
+                onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+
+                Explore ↓
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO ART -->
+
+    <div class="heroArt">
+
+        <div class="gridLines"></div>
+
+        <div class="artText">
+
+            <div class="artBig">
+                01
+            </div>
+
+            <div class="artSmall">
+                IDEA → PRODUCT → PITCH
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     MARQUEE
+====================================================== -->
+
+<div class="marquee">
+
+    <div class="marqueeTrack">
+
+        <span>
+            BUILD <b>◆</b>
+        </span>
+
+        <span>
+            CREATE <b>◆</b>
+        </span>
+
+        <span>
+            PITCH <b>◆</b>
+        </span>
+
+        <span>
+            COMPETE <b>◆</b>
+        </span>
+
+        <span>
+            BUILD <b>◆</b>
+        </span>
+
+        <span>
+            CREATE <b>◆</b>
+        </span>
+
+        <span>
+            PITCH <b>◆</b>
+        </span>
+
+        <span>
+            COMPETE <b>◆</b>
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
+<section
+    class="intro container"
+    id="about">
+
+    <div class="sectionNo">
+        01 — THE CHALLENGE
+    </div>
+
+
+    <div class="bigText">
+
+        Don't just have
+        an idea.
+
+        <span class="muted">
+            Build something
+            people actually want.
+        </span>
+
+        Then pitch it.
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     BENEFITS
+====================================================== -->
+
+<section
+    class="container"
+    id="benefits">
+
+    <div class="sectionHead">
+
+        <div>
+
+            <div class="sectionNo">
+                02 — WHAT YOU GET
+            </div>
+
+            <h2>
+                More than<br>
+                a trophy.
+            </h2>
+
+        </div>
+
+
+        <p>
+            Turn an early idea into a
+            sharper product, stronger pitch
+            and bigger opportunity.
+        </p>
+
+    </div>
+
+
+    <div class="benefits">
+
+
+        <article class="benefit">
+
+            <div class="benefitNo">
+                01
+            </div>
+
+            <div class="icon">
+                ✦
+            </div>
+
+            <h3>
+                Mentorship
+            </h3>
+
+            <p>
+                Learn from builders and
+                entrepreneurs who understand
+                what it takes to turn an idea
+                into something real.
+            </p>
+
+        </article>
+
+
+        <article class="benefit">
+
+            <div class="benefitNo">
+                02
+            </div>
+
+            <div class="icon">
+                ↗
+            </div>
+
+            <h3>
+                Visibility
+            </h3>
+
+            <p>
+                Put your idea in front of
+                judges, students and the
+                entrepreneurial community.
+            </p>
+
+        </article>
+
+
+        <article class="benefit">
+
+            <div class="benefitNo">
+                03
+            </div>
+
+            <div class="icon">
+                $
+            </div>
+
+            <h3>
+                Opportunity
+            </h3>
+
+            <p>
+                Compete for prizes, recognition
+                and opportunities to continue
+                developing your startup.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     SHOWCASE
+====================================================== -->
+
+<section class="showcase container">
+
+    <div class="sectionHead">
+
+        <div>
+
+            <div class="sectionNo">
+                03 — THE ARENA
+            </div>
+
+            <h2>
+                Ideas worth<br>
+                seeing.
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="showcaseGrid">
+
+
+        <article class="project">
+
+            <div class="projectContent">
+
+                <span class="tag">
+                    FEATURED STARTUP
+                </span>
+
+                <h3>
+                    Your idea<br>
+                    belongs here.
+                </h3>
+
+                <p>
+                    Bring your problem,
+                    solution and ambition
+                    to the pitch stage.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <div class="smallProjects">
+
+
+            <article class="project small">
+
+                <div class="projectContent">
+
+                    <span class="tag">
+                        STUDENT BUILDERS
+                    </span>
+
+                    <h3>
+                        Think.
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+            <article class="project small">
+
+                <div class="projectContent">
+
+                    <span class="tag">
+                        LIVE PITCH
+                    </span>
+
+                    <h3>
+                        Pitch.
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     TIMELINE
+====================================================== -->
+
+<section
+    class="timeline container"
+    id="timeline">
+
+    <div class="sectionHead">
+
+        <div>
+
+            <div class="sectionNo">
+                04 — TIMELINE
+            </div>
+
+            <h2>
+                From idea<br>
+                to stage.
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="timelineItem">
+
+        <div class="timelineNo">
+            01
+        </div>
+
+        <div>
+
+            <h3>
+                Register
+            </h3>
+
+            <p>
+                Tell us who you are,
+                your team and your idea.
+            </p>
+
+        </div>
+
+        <div class="date">
+            STEP ONE
+        </div>
+
+    </div>
+
+
+    <div class="timelineItem">
+
+        <div class="timelineNo">
+            02
+        </div>
+
+        <div>
+
+            <h3>
+                Build
+            </h3>
+
+            <p>
+                Refine your problem,
+                solution and pitch.
+            </p>
+
+        </div>
+
+        <div class="date">
+            STEP TWO
+        </div>
+
+    </div>
+
+
+    <div class="timelineItem">
+
+        <div class="timelineNo">
+            03
+        </div>
+
+        <div>
+
+            <h3>
+                Pitch
+            </h3>
+
+            <p>
+                Present your idea
+                to the judging panel.
+            </p>
+
+        </div>
+
+        <div class="date">
+            STEP THREE
+        </div>
+
+    </div>
+
+
+    <div class="timelineItem">
+
+        <div class="timelineNo">
+            04
+        </div>
+
+        <div>
+
+            <h3>
+                Win.
+            </h3>
+
+            <p>
+                Stand out and take
+                the next step.
+            </p>
+
+        </div>
+
+        <div class="date">
+            FINAL
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     FAQ
+====================================================== -->
+
+<section
+    class="faq container"
+    id="faq">
+
+    <div class="sectionHead">
+
+        <div>
+
+            <div class="sectionNo">
+                05 — FAQ
+            </div>
+
+            <h2>
+                Questions?
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="faqItem">
+
+        <button class="faqButton">
+
+            Who can participate?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+                Students interested in entrepreneurship
+                and building innovative ideas can
+                participate. Check your E-Cell's official
+                eligibility rules for the final criteria.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faqItem">
+
+        <button class="faqButton">
+
+            Can I participate as a team?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+                Yes. Enter your team name during
+                registration and make sure all required
+                participant details are submitted according
+                to your event rules.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faqItem">
+
+        <button class="faqButton">
+
+            What should my idea include?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+                Explain the problem, your proposed
+                solution and why your idea could be
+                useful. Keep it clear and concise.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="faqItem">
+
+        <button class="faqButton">
+
+            Is there a registration fee?
+
+            <span>+</span>
+
+        </button>
+
+        <div class="faqAnswer">
+
+            <p>
+                Add your event's actual fee information
+                here. The current template does not assume
+                a fee.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     REGISTRATION
+====================================================== -->
+
+<section
+    class="register container"
+    id="register">
+
+    <div class="registerBox">
+
+        <h2>
+
+            Ready to
+
+            <span>
+                pitch?
+            </span>
+
+        </h2>
+
+
+        <form
+            class="form"
+            id="pitchForm">
+
+
+            <input
+                class="input"
+                id="name"
+                type="text"
+                placeholder="Full name"
+                autocomplete="name"
+            >
+
+            <input
+                class="input"
+                id="email"
+                type="email"
+                placeholder="Email address"
+                autocomplete="email"
+            >
+
+
+            <input
+                class="input"
+                id="phone"
+                type="tel"
+                placeholder="10-digit phone number"
+                inputmode="numeric"
+            >
+
+            <input
+                class="input"
+                id="team"
+                type="text"
+                placeholder="Team name"
+            >
+
+
+            <textarea
+                class="input"
+                id="idea"
+                placeholder="Tell us about your startup idea..."
+            ></textarea>
+
+
+            <button
+                class="submit"
+                type="submit">
+
+                SUBMIT YOUR PITCH
+                &nbsp; ↗
+
+            </button>
+
+        </form>
+
+
+        <div
+            class="success"
+            id="success">
+
+            <strong>
+                You're in. ✓
+            </strong>
+
+            <p>
+                Your registration has been
+                submitted successfully.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="container">
+
+    <span>
+        E-CELL © 2026
+    </span>
+
+    <span>
+        STARTUP PITCH COMPETITION
+    </span>
+
+</footer>
+
+
+<script>
+
+/* =========================================================
+   REGISTER SCROLL
+========================================================= */
+
+function goRegister(){
+
+    document
+        .getElementById("register")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+/* =========================================================
+   MOVING GLASS DOTS
+========================================================= */
+
+const dots =
+    document.querySelectorAll(".dot");
+
+function moveDots(){
+
+    dots.forEach(dot=>{
+
+        const x =
+            Math.random()*94+3;
+
+        const y =
+            Math.random()*90+4;
+
+        const scale =
+            .6 + Math.random()*1.3;
+
+        dot.style.left =
+            x+"vw";
+
+        dot.style.top =
+            y+"vh";
+
+        dot.style.transform =
+            `scale(${scale})`;
+
+    });
+
+}
+
+moveDots();
+
+setInterval(
+    moveDots,
+    1000
+);
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+document
+    .querySelectorAll(".faqButton")
+    .forEach(button=>{
+
+        button.addEventListener(
+            "click",
+            ()=>{
+
+                const item =
+                    button.parentElement;
+
+                item.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   FORM VALIDATION
+========================================================= */
+
+const form =
+    document.getElementById("pitchForm");
+
+form.addEventListener(
+    "submit",
+    function(event){
+
+        event.preventDefault();
+
+
+        const name =
+            document
+            .getElementById("name")
+            .value.trim();
+
+        const email =
+            document
+            .getElementById("email")
+            .value.trim();
+
+        const phone =
+            document
+            .getElementById("phone")
+            .value.trim();
+
+        const team =
+            document
+            .getElementById("team")
+            .value.trim();
+
+        const idea =
+            document
+            .getElementById("idea")
+            .value.trim();
+
+
+        if(name.length < 2){
+
+            alert(
+                "Please enter your full name."
+            );
+
+            return;
+
+        }
+
+
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+
+        if(
+            !emailPattern.test(email)
+        ){
+
+            alert(
+                "Please enter a valid email address."
+            );
+
+            return;
+
+        }
+
+
+        if(
+            !/^[0-9]{10}$/.test(phone)
+        ){
+
+            alert(
+                "Please enter a valid 10-digit phone number."
+            );
+
+            return;
+
+        }
+
+
+        if(team.length < 2){
+
+            alert(
+                "Please enter your team name."
+            );
+
+            return;
+
+        }
+
+
+        if(idea.length < 10){
+
+            alert(
+                "Please describe your idea in at least 10 characters."
+            );
+
+            return;
+
+        }
+
+
+        form.style.display =
+            "none";
+
+
+        document
+            .getElementById("success")
+            .style.display =
+            "block";
+
+
+        document
+            .getElementById("success")
+            .scrollIntoView({
+                behavior:"smooth",
+                block:"center"
+            });
+
+    }
+);
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const reveal =
+    document.querySelectorAll(
+        ".benefit,.project,.timelineItem,.bigText"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+        entries=>{
+
+            entries.forEach(entry=>{
+
+                if(
+                    entry.isIntersecting
+                ){
+
+                    entry.target.animate(
+                        [
+                            {
+                                opacity:0,
+                                transform:
+                                    "translateY(35px)"
+                            },
+
+                            {
+                                opacity:1,
+                                transform:
+                                    "translateY(0)"
+                            }
+                        ],
+                        {
+                            duration:750,
+                            easing:
+                                "cubic-bezier(.2,.8,.2,1)",
+                            fill:"forwards"
+                        }
+                    );
+
+                    observer.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold:.12
+        }
+    );
+
+
+reveal.forEach(
+    element =>
+        observer.observe(element)
+);
+
+</script>
+
+</body>
+</html>
